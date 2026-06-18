@@ -77,3 +77,11 @@ h2 {
     color: #007bff;
 
 }
+input, textarea {
+
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
