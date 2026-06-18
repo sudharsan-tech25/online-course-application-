@@ -15,6 +15,12 @@ h1 {
 
 }
 
+h2 {
+
+    color: #007bff;
+
+}
+
 a {
 
     text-decoration: none;
@@ -22,8 +28,6 @@ a {
     background-color: #007bff;
     padding: 10px 15px;
     border-radius: 5px;
-box-shadow: 0px 2px 5px gray;
-
 
 }
 
@@ -41,12 +45,22 @@ button {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 
 }
 
 button:hover {
 
     background-color: darkgreen;
+
+}
+
+input, textarea {
+
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
 
 }
 
@@ -64,6 +78,7 @@ li {
     padding: 15px;
     width: 300px;
     border-radius: 10px;
+    box-shadow: 0px 2px 5px gray;
 
 }
 
@@ -71,19 +86,5 @@ p {
 
     margin-top: 30px;
     color: #555;
-
-}
-
-h2 {
-
-    color: #007bff;
-
-}
-input, textarea {
-
-    width: 250px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid gray;
 
 }
