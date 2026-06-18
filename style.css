@@ -97,3 +97,9 @@ hr {
     margin: 20px 0;
 
 }
+body {
+
+    max-width: 1000px;
+    margin: auto;
+
+}
