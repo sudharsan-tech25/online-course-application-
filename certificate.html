@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Certificate</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>Course Completion Certificate</h1>
+
+<hr>
+
+<h2>Congratulations!</h2>
+
+<p>
+This certificate is awarded to
+</p>
+
+<h2 id="studentName"></h2>
+
+<p>
+for successfully completing the course.
+</p>
+
+<hr>
+
+<p>© 2026 Online Course Application | Developed by Sudharsan</p>
+
+<script>
+
+    let username = localStorage.getItem("name");
+
+    document.getElementById("studentName").innerHTML = username;
+
+</script>
+
+</body>
+</html>
