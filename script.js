@@ -51,3 +51,12 @@ window.onload = function() {
     }
 
 }
+function logout() {
+
+    localStorage.clear();
+
+    alert("Logged Out Successfully!");
+
+    location.reload();
+
+}
