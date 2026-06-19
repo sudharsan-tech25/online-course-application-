@@ -39,3 +39,15 @@ function enrollMessage() {
     alert("Course Enrolled Successfully!");
 
 }
+window.onload = function() {
+
+    let username = localStorage.getItem("name");
+
+    if(username) {
+
+        document.getElementById("welcome").innerHTML =
+        "Welcome, " + username + "!";
+
+    }
+
+}
