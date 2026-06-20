@@ -1,8 +1,8 @@
 function showMessage() {
 
-    let email = document.getElementById("email").value;
+    let email = document.getElementById("email")?.value;
 
-    let password = document.getElementById("password").value;
+    let password = document.getElementById("password")?.value;
 
     if(email === "admin@gmail.com" && password === "1234") {
 
@@ -20,11 +20,13 @@ function showMessage() {
 
 function registerMessage() {
 
-    let name = document.getElementById("name").value;
+    let name = document.getElementById("name")?.value;
 
-    let email = document.getElementById("registerEmail").value;
+    let email =
+    document.getElementById("registerEmail")?.value;
 
-    let password = document.getElementById("registerPassword").value;
+    let password =
+    document.getElementById("registerPassword")?.value;
 
     localStorage.setItem("name", name);
 
@@ -39,25 +41,6 @@ function registerMessage() {
 function enrollMessage() {
 
     alert("Course Enrolled Successfully!");
-
-}
-
-window.onload = function() {
-
-    let username = localStorage.getItem("name");
-
-    if(username) {
-
-        let welcomeText = document.getElementById("welcome");
-
-        if(welcomeText) {
-
-            welcomeText.innerHTML =
-            "Welcome, " + username + "!";
-
-        }
-
-    }
 
 }
 
@@ -98,18 +81,52 @@ function checkAnswer(answer) {
     localStorage.setItem("quizScore", score);
 
 }
+
 function searchCourse() {
 
-    let course =
-    document.getElementById("searchCourse").value;
+    let input =
+    document.getElementById("searchCourse")
+    .value.toLowerCase();
 
-    alert("Searching for: " + course);
+    let ul =
+    document.getElementById("courseList");
+
+    let li =
+    ul.getElementsByTagName("li");
+
+    for(let i = 0; i < li.length; i++) {
+
+        let text =
+        li[i].textContent.toLowerCase();
+
+        if(text.includes(input)) {
+
+            li[i].style.display = "";
+
+        }
+
+        else {
+
+            li[i].style.display = "none";
+
+        }
+
+    }
 
 }
+
 function addReview() {
 
     let review =
     document.getElementById("reviewInput").value;
+
+    if(review === "") {
+
+        alert("Please enter a review!");
+
+        return;
+
+    }
 
     let li =
     document.createElement("li");
@@ -118,5 +135,53 @@ function addReview() {
 
     document.getElementById("reviewList")
     .appendChild(li);
+
+    let reviews =
+    JSON.parse(localStorage.getItem("reviews")) || [];
+
+    reviews.push(review);
+
+    localStorage.setItem(
+        "reviews",
+        JSON.stringify(reviews)
+    );
+
+    document.getElementById("reviewInput").value = "";
+
+}
+
+window.onload = function() {
+
+    let username =
+    localStorage.getItem("name");
+
+    if(username) {
+
+        let welcomeText =
+        document.getElementById("welcome");
+
+        if(welcomeText) {
+
+            welcomeText.innerHTML =
+            "Welcome, " + username + "!";
+
+        }
+
+    }
+
+    let reviews =
+    JSON.parse(localStorage.getItem("reviews")) || [];
+
+    for(let i = 0; i < reviews.length; i++) {
+
+        let li =
+        document.createElement("li");
+
+        li.textContent = reviews[i];
+
+        document.getElementById("reviewList")
+        ?.appendChild(li);
+
+    }
 
 }
