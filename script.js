@@ -98,3 +98,11 @@ function checkAnswer(answer) {
     localStorage.setItem("quizScore", score);
 
 }
+function searchCourse() {
+
+    let course =
+    document.getElementById("searchCourse").value;
+
+    alert("Searching for: " + course);
+
+}
