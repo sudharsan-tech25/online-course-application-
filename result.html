@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Quiz Result</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>Quiz Result</h1>
+
+<hr>
+
+<h2 id="finalScore"></h2>
+
+<p>
+Thank you for attending the quiz!
+</p>
+
+<a href="index.html">Go Back Home</a>
+
+<hr>
+
+<p>© 2026 Online Course Application | Developed by Sudharsan</p>
+
+<script>
+
+    let finalScore = localStorage.getItem("quizScore");
+
+    document.getElementById("finalScore").innerHTML =
+    "Your Final Score: " + finalScore;
+
+</script>
+
+</body>
+</html>
