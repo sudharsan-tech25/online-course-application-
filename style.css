@@ -136,3 +136,16 @@ body {
     }
 
 }
+.dark-mode {
+
+    background: #222;
+    color: white;
+
+}
+
+.dark-mode li {
+
+    background-color: #333;
+    color: white;
+
+}
