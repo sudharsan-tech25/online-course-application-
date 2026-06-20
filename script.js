@@ -118,7 +118,7 @@ function searchCourse() {
 function addReview() {
 
     let review =
-    document.getElementById("reviewInput").value;
+    document.getElementById("reviewInput")?.value;
 
     if(review === "") {
 
@@ -134,7 +134,7 @@ function addReview() {
     li.textContent = review;
 
     document.getElementById("reviewList")
-    .appendChild(li);
+    ?.appendChild(li);
 
     let reviews =
     JSON.parse(localStorage.getItem("reviews")) || [];
@@ -155,17 +155,36 @@ window.onload = function() {
     let username =
     localStorage.getItem("name");
 
-    if(username) {
+    let email =
+    localStorage.getItem("email");
 
-        let welcomeText =
-        document.getElementById("welcome");
+    let welcomeText =
+    document.getElementById("welcome");
 
-        if(welcomeText) {
+    if(welcomeText && username) {
 
-            welcomeText.innerHTML =
-            "Welcome, " + username + "!";
+        welcomeText.innerHTML =
+        "Welcome, " + username + "!";
 
-        }
+    }
+
+    let profileName =
+    document.getElementById("profileName");
+
+    let profileEmail =
+    document.getElementById("profileEmail");
+
+    if(profileName && username) {
+
+        profileName.innerHTML =
+        "Student Name: " + username;
+
+    }
+
+    if(profileEmail && email) {
+
+        profileEmail.innerHTML =
+        "Student Email: " + email;
 
     }
 
