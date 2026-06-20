@@ -149,3 +149,32 @@ body {
     color: white;
 
 }
+
+@media screen and (max-width: 600px) {
+
+    body {
+
+        padding: 10px;
+
+    }
+
+    li {
+
+        width: 90%;
+
+    }
+
+    input, textarea {
+
+        width: 90%;
+
+    }
+
+    a {
+
+        display: block;
+        margin: 10px auto;
+
+    }
+
+}
