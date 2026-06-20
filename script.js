@@ -17,6 +17,7 @@ function showMessage() {
     }
 
 }
+
 function registerMessage() {
 
     let name = document.getElementById("name").value;
@@ -34,23 +35,32 @@ function registerMessage() {
     alert("Registration Successful!");
 
 }
+
 function enrollMessage() {
 
     alert("Course Enrolled Successfully!");
 
 }
+
 window.onload = function() {
 
     let username = localStorage.getItem("name");
 
     if(username) {
 
-        document.getElementById("welcome").innerHTML =
-        "Welcome, " + username + "!";
+        let welcomeText = document.getElementById("welcome");
+
+        if(welcomeText) {
+
+            welcomeText.innerHTML =
+            "Welcome, " + username + "!";
+
+        }
 
     }
 
 }
+
 function logout() {
 
     localStorage.clear();
@@ -60,14 +70,20 @@ function logout() {
     location.reload();
 
 }
+
 function toggleDarkMode() {
 
     document.body.classList.toggle("dark-mode");
 
 }
+
+let score = 0;
+
 function checkAnswer(answer) {
 
     if(answer === 'a') {
+
+        score++;
 
         alert("Correct Answer!");
 
@@ -78,5 +94,7 @@ function checkAnswer(answer) {
         alert("Wrong Answer!");
 
     }
+
+    alert("Your Score: " + score);
 
 }
