@@ -65,3 +65,18 @@ function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 
 }
+function checkAnswer(answer) {
+
+    if(answer === 'a') {
+
+        alert("Correct Answer!");
+
+    }
+
+    else {
+
+        alert("Wrong Answer!");
+
+    }
+
+}
