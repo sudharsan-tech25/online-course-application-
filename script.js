@@ -106,3 +106,17 @@ function searchCourse() {
     alert("Searching for: " + course);
 
 }
+function addReview() {
+
+    let review =
+    document.getElementById("reviewInput").value;
+
+    let li =
+    document.createElement("li");
+
+    li.textContent = review;
+
+    document.getElementById("reviewList")
+    .appendChild(li);
+
+}
