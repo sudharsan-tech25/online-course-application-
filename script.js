@@ -95,6 +95,6 @@ function checkAnswer(answer) {
 
     }
 
-    alert("Your Score: " + score);
+    localStorage.setItem("quizScore", score);
 
 }
