@@ -204,3 +204,27 @@ window.onload = function() {
     }
 
 }
+function sendMessage() {
+
+    let name =
+    document.getElementById("contactName").value;
+
+    let email =
+    document.getElementById("contactEmail").value;
+
+    let message =
+    document.getElementById("contactMessage").value;
+
+    if(name === "" || email === "" || message === "") {
+
+        alert("Please fill all fields!");
+
+    }
+
+    else {
+
+        alert("Message Sent Successfully!");
+
+    }
+
+}
