@@ -234,3 +234,32 @@ footer {
     box-shadow: 0px 4px 10px gray;
 
 }
+.testimonial {
+
+    background-color: white;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    width: 80%;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 10px gray;
+
+}
+
+.testimonial p {
+
+    font-style: italic;
+
+    color: #333;
+
+}
+
+.testimonial h4 {
+
+    color: #007bff;
+
+}
