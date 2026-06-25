@@ -1,176 +1,343 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <title>Online Course Application</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="banner">
+    <div class="banner">
 
-    <h1>Online Course Application</h1>
+        <h1>Online Course Application</h1>
 
-    <p>Learn Anytime, Anywhere 🚀</p>
+        <p>Learn Anytime, Anywhere 🚀</p>
 
-</div>
+    </div>
 
-<div class="navbar">
+    <div class="navbar">
 
-    <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
 
-    <a href="login.html">Login</a>
+        <a href="login.html">Login</a>
 
-    <a href="register.html">Register</a>
+        <a href="register.html">Register</a>
 
-    <a href="courses.html">Courses</a>
+        <a href="courses.html">Courses</a>
 
-    <a href="about.html">About</a>
+        <a href="about.html">About</a>
 
-    <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
 
-    <a href="reviews.html">Reviews</a>
+        <a href="reviews.html">Reviews</a>
 
-    <a href="faq.html">FAQ</a>
+        <a href="faq.html">FAQ</a>
 
-</div>
+    </div>
 
-<div class="slider">
+    <div class="hero">
 
-    <img id="slideImage"
-    src="banner1.jpg">
+        <h1>Upgrade Your Skills Online 🚀</h1>
 
-</div>
+        <p>
 
-<br>
+            Learn from anywhere with quizzes and certificates.
 
-<button onclick="toggleDarkMode()">
+        </p>
 
-Dark Mode
+        <button onclick="window.location.href='courses.html'">
 
-</button>
+            Get Started
 
-<hr>
+        </button>
 
-<h2>Learn Anytime, Anywhere</h2>
+    </div>
 
-<h3 id="welcome"></h3>
+    <div class="slider">
 
-<p>
+        <img id="slideImage" src="banner1.jpg">
 
-Welcome to our Online Course Application.
+    </div>
 
-Students can register, login, enroll in courses,
+    <br>
 
-attend quizzes, submit reviews,
+    <button onclick="toggleDarkMode()">
 
-and improve their learning skills online.
+        Dark Mode
 
-</p>
+    </button>
 
-<button onclick="window.location.href='courses.html'">
+    <hr>
 
-View Courses
+    <h2>Learn Anytime, Anywhere</h2>
 
-</button>
-
-<br><br>
-
-<button onclick="window.location.href='quiz.html'">
-
-Start Quiz
-
-</button>
-
-<br><br>
-
-<button onclick="window.location.href='certificate.html'">
-
-View Certificate
-
-</button>
-
-<br><br>
-
-<button onclick="logout()">
-
-Logout
-
-</button>
-
-<br><br>
-
-<h2>Your Learning Progress</h2>
-
-<progress value="70" max="100"></progress>
-
-<p>70% Completed</p>
-
-<hr>
-
-<h2>Student Profile</h2>
-
-<p id="profileName"></p>
-
-<p id="profileEmail"></p>
-
-<hr>
-
-<h2>Project Features</h2>
-
-<ul>
-
-<li>User Registration and Login</li>
-
-<li>Course Enrollment</li>
-
-<li>Quiz System</li>
-
-<li>Certificate Generation</li>
-
-<li>Dark Mode</li>
-
-<li>Reviews and FAQ Section</li>
-
-<li>Responsive Design</li>
-
-<li>Auto Image Slider</li>
-
-</ul>
-
-<hr>
-
-<h2>Why Choose Us?</h2>
-
-<p>
-
-✔ Easy Learning Platform
-
-<br><br>
-
-✔ Interactive Quiz System
-
-<br><br>
-
-✔ Professional User Interface
-
-<br><br>
-
-✔ Mobile Friendly Design
-
-</p>
-
-<hr>
-
-<h2>Student Testimonials</h2>
-
-<div class="testimonial">
+    <h3 id="welcome"></h3>
 
     <p>
 
-    "Excellent platform for learning web development!"
+        Welcome to our Online Course Application.
+
+        Students can register, login, enroll in courses,
+
+        attend quizzes, submit reviews,
+
+        and improve their learning skills online.
 
     </p>
+
+    <button onclick="window.location.href='courses.html'">
+
+        View Courses
+
+    </button>
+
+    <br><br>
+
+    <button onclick="window.location.href='quiz.html'">
+
+        Start Quiz
+
+    </button>
+
+    <br><br>
+
+    <button onclick="window.location.href='certificate.html'">
+
+        View Certificate
+
+    </button>
+
+    <br><br>
+
+    <button onclick="logout()">
+
+        Logout
+
+    </button>
+
+    <br><br>
+
+    <h2>Your Learning Progress</h2>
+
+    <progress value="70" max="100"></progress>
+
+    <p>70% Completed</p>
+
+    <hr>
+
+    <h2>Student Profile</h2>
+
+    <p id="profileName"></p>
+
+    <p id="profileEmail"></p>
+
+    <hr>
+
+    <h2>Project Features</h2>
+
+    <div class="feature-card">
+
+        User Registration and Login
+
+    </div>
+
+    <div class="feature-card">
+
+        Course Enrollment
+
+    </div>
+
+    <div class="feature-card">
+
+        Quiz System
+
+    </div>
+
+    <div class="feature-card">
+
+        Certificate Generation
+
+    </div>
+
+    <div class="feature-card">
+
+        Dark Mode
+
+    </div>
+
+    <div class="feature-card">
+
+        Reviews and FAQ Section
+
+    </div>
+
+    <div class="feature-card">
+
+        Responsive Design
+
+    </div>
+
+    <div class="feature-card">
+
+        Auto Image Slider
+
+    </div>
+
+    <hr>
+
+    <h2>Courses</h2>
+
+    <div class="course-card">
+
+        <h3>Web Development</h3>
+
+        <p>Learn HTML, CSS, JavaScript</p>
+
+    </div>
+
+    <div class="course-card">
+
+        <h3>React.js</h3>
+
+        <p>Build modern frontend applications</p>
+
+    </div>
+
+    <div class="course-card">
+
+        <h3>MERN Stack</h3>
+
+        <p>MongoDB, Express, React, Node.js</p>
+
+    </div>
+
+    <hr>
+
+    <h2>Why Choose Us?</h2>
+
+    <p>
+
+        ✔ Easy Learning Platform
+
+        <br><br>
+
+        ✔ Interactive Quiz System
+
+        <br><br>
+
+        ✔ Professional User Interface
+
+        <br><br>
+
+        ✔ Mobile Friendly Design
+
+    </p>
+
+    <hr>
+
+    <h2>Student Testimonials</h2>
+
+    <div class="testimonial">
+
+        <p>
+
+            "Excellent platform for learning web development!"
+
+        </p>
+
+        <h4>- Arjun</h4>
+
+    </div>
+
+    <div class="testimonial">
+
+        <p>
+
+            "Quiz and certificate features are very useful."
+
+        </p>
+
+        <h4>- Priya</h4>
+
+    </div>
+
+    <div class="testimonial">
+
+        <p>
+
+            "Simple and user-friendly interface."
+
+        </p>
+
+        <h4>- Kavin</h4>
+
+    </div>
+
+    <hr>
+
+    <h2>Follow Us</h2>
+
+    <div class="social-icons">
+
+        <a href="https://github.com/sudharsan-tech25"
+        target="_blank">
+
+            GitHub
+
+        </a>
+
+        |
+
+        <a href="https://linkedin.com"
+        target="_blank">
+
+            LinkedIn
+
+        </a>
+
+        |
+
+        <a href="https://instagram.com"
+        target="_blank">
+
+            Instagram
+
+        </a>
+
+    </div>
+
+    <hr>
+
+    <h2>Project Source Code</h2>
+
+    <a href="https://github.com/sudharsan-tech25/online-course-application-"
+    target="_blank">
+
+        View Source Code on GitHub
+
+    </a>
+
+    <footer>
+
+        <p>
+
+            © 2026 Online Course Application |
+
+            Developed by Sudharsan
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
