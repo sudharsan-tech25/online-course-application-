@@ -180,3 +180,10 @@ if (studentName) {
         localStorage.getItem("studentName");
 
 }
+function enrollCourse(courseName){
+
+    alert("You have successfully enrolled in " + courseName);
+
+    window.location.href = "login.html";
+
+}
