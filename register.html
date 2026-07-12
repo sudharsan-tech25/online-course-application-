@@ -1,38 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
-    <title>Register</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Online Course Application</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<a href="index.html">Home</a> |
-<a href="login.html">Login</a> |
-<a href="register.html">Register</a> |
-<a href="courses.html">Courses</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a>
+    <div class="banner">
 
-<hr>
+        <h1>Online Course Application</h1>
 
-<h1>Student Registration</h1>
+        <p>Student Registration</p>
 
-<input type="text" id="name" placeholder="Enter Name">
+    </div>
 
-<br><br>
+    <div class="navbar">
 
-<input type="email" id="registerEmail" placeholder="Enter Email">
+        <a href="index.html">Home</a>
 
-<br><br>
-<input type="password" id="registerPassword" placeholder="Enter Password">
-<br><br>
-<button onclick="registerMessage()">Register</   button>
-<hr>
+        <a href="login.html">Login</a>
 
-<script src="script.js"></script>
+        <a href="courses.html">Courses</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="form-container">
+
+        <h2>Create Account</h2>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter Full Name"
+            required>
+
+        <br><br>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Email"
+            required>
+
+        <br><br>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required>
+
+        <br><br>
+
+        <button onclick="register()">
+
+            Register
+
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='login.html'">
+
+            Already Have an Account? Login
+
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='index.html'">
+
+            Back to Home
+
+        </button>
+
+    </div>
+
+    <footer>
+
+        <p>© 2026 Online Course Application | Developed by D. Sudharsan</p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
