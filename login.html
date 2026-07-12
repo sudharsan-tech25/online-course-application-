@@ -1,40 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
-    <title>Login</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Online Course Application</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<a href="index.html">Home</a> |
-<a href="login.html">Login</a> |
-<a href="register.html">Register</a> |
-<a href="courses.html">Courses</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a>
+    <div class="banner">
 
-<hr>
+        <h1>Online Course Application</h1>
 
-<h1>Student Login</h1>
+        <p>Student Login</p>
 
-<input type="email" id="email" placeholder="Enter Email">
+    </div>
 
-<br><br>
+    <div class="navbar">
 
-<input type="password" id="password" placeholder="Enter Password">
+        <a href="index.html">Home</a>
 
-<br><br>
+        <a href="register.html">Register</a>
 
-<button onclick="showMessage()">Login</button>
+        <a href="courses.html">Courses</a>
 
-<hr>
+        <a href="about.html">About</a>
 
-<p>© 2026 Online Course Application | Developed by Sudharsan</p>
+        <a href="contact.html">Contact</a>
 
-<script src="script.js"></script>
+    </div>
+
+    <div class="form-container">
+
+        <h2>Login</h2>
+
+        <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter Email"
+            required>
+
+        <br><br>
+
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter Password"
+            required>
+
+        <br><br>
+
+        <button onclick="login()">
+
+            Login
+
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='register.html'">
+
+            Create New Account
+
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='index.html'">
+
+            Back to Home
+
+        </button>
+
+    </div>
+
+    <footer>
+
+        <p>
+
+            © 2026 Online Course Application | Developed by D. Sudharsan
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
