@@ -1,75 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
+<div class="course-card">
 
-    <title>Courses</title>
+    <h2>HTML & CSS</h2>
 
-    <link rel="stylesheet" href="style.css">
+    <p>Learn the basics of web development.</p>
 
-</head>
-<body>
-
-<div class="navbar">
-
-    <a href="index.html">Home</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-    <a href="courses.html">Courses</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <button onclick="enrollCourse('HTML & CSS')">
+        Enroll Now
+    </button>
 
 </div>
 
-<hr>
+<div class="course-card">
 
-<h1>Available Courses</h1>
+    <h2>JavaScript</h2>
 
-<input type="text" id="searchCourse"
-placeholder="Search Course">
+    <p>Build interactive web applications.</p>
 
-<br><br>
+    <button onclick="enrollCourse('JavaScript')">
+        Enroll Now
+    </button>
 
-<button onclick="searchCourse()">
-Search
-</button>
+</div>
 
-<br><br>
+<div class="course-card">
 
-<ul>
+    <h2>React.js</h2>
 
-    <li>
-        Java Programming
-        <button onclick="enrollMessage()">Enroll</button>
-    </li>
+    <p>Create modern frontend applications.</p>
 
-    <br>
+    <button onclick="enrollCourse('React.js')">
+        Enroll Now
+    </button>
 
-    <li>
-        Python Programming
-        <button onclick="enrollMessage()">Enroll</button>
-    </li>
+</div>
 
-    <br>
+<div class="course-card">
 
-    <li>
-        Web Development
-        <button onclick="enrollMessage()">Enroll</button>
-    </li>
+    <h2>MERN Stack</h2>
 
-    <br>
+    <p>Learn MongoDB, Express.js, React.js and Node.js.</p>
 
-    <li>
-        Database Management
-        <button onclick="enrollMessage()">Enroll</button>
-    </li>
+    <button onclick="enrollCourse('MERN Stack')">
+        Enroll Now
+    </button>
 
-</ul>
-
-<hr>
-
-<p>© 2026 Online Course Application | Developed by Sudharsan</p>
+</div>
 
 <script src="script.js"></script>
-
-</body>
-</html>
